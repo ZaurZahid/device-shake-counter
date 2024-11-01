@@ -24,11 +24,15 @@ This is a React application that counts sharp device shakes using data from the 
 ### Installation
 
 1. Clone this repository:
+   ```bash
    git clone https://github.com/YOUR_USERNAME/device-shake-counter.git
    cd device-shake-counter
 2. Install the dependencies:
+   ```bash
    npm install
 3. Start the development server:
+   ```bash
    npm start
 
 The app will be running at http://localhost:3000.
+
