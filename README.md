@@ -36,3 +36,17 @@ This is a React application that counts sharp device shakes using data from the 
 
 The app will be running at http://localhost:3000.
 
+### Shake Detection Logic
+This app uses the DeviceMotionEvent API to track changes in acceleration along the X, Y, or Z axes. A "shake" is defined as a rapid change of more than 15 m/s² on any of these axes, indicating a strong shake movement. Each time a shake is detected, the counter increments by 1, and the animation responds to give visual feedback.
+
+### Usage
+Shake your device: The shake counter will increment with each detected shake, and an animation will respond to the shake event.
+Reset Counter: Press the "Reset Counter" button to reset the shake count to zero.
+Error Handling: If motion sensors are not supported or access is denied, an error message will appear.
+
+### Troubleshooting
+Permissions: On iOS devices, make sure to enable "Motion & Orientation Access" under Settings > Safari.
+Testing on iOS: Note that Chrome on iOS also follows Safari’s motion permission settings due to iOS’s WebKit restrictions.
+
+### Link to the Deployed App
+https://device-shake-counter.vercel.app/
